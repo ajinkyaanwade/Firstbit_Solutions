@@ -1,0 +1,70 @@
+Set A
+
+Q1.
+
+Select e_name,e_salary from Employees order by e_salary desc;
+
+Q2.
+
+select * from Employees order by salary desc limit 5;
+
+Q3.
+
+select * from Employees offset 3 limit 5;
+
+Q4.
+
+select dept_id,count(e_id) as "Employee Count" from Employees Group by dept_id;
+
+Q5.
+
+select dept_id,avg(e_salary) as"Average" from employee group by dept_id having avg(e_salary)>50000;
+
+Q6.
+
+select * from Products where product_name like '%Laptop%'; 
+
+Q7.
+
+select left(studennt_name,3) as first_three_char from Students;
+
+Q8.
+
+select * from Students where student_name like 'A%';
+
+Q9.
+
+select count(orders),month_name from Information group by month_name having count(orders)>100;
+
+Q10.
+
+select sum(sales_amount),avg(sales_amount) from Sales having sum(sales_amount)>100000;
+
+Q11.
+
+a)
+
+Q12.
+
+b)
+
+Q13.
+
+c)
+
+Q14.
+
+b)
+
+Q15.
+
+b)
+
+Q16.
+
+select region,sum(total_amount) as total_orders from Orders o join Customers c on o.customer_id=c.customer_id group by region having sum(total_amount)>10000;
+
+Q17.
+
+select author_id,sum(quantity) as total_book_sold from Books b join Sales s on b.book_id=s.book_id group by author_id having sum(quantity)>100;
+
